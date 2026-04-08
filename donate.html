@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Hyacinth Crisis | Donate</title>
+  <meta name="description" content="Support awareness and habitat restoration efforts focused on invasive water hyacinth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-donate">
+  <div class="page-shell">
+    <nav class="nav" id="navbar">
+      <a href="index.html" class="brand-mark">
+        <span class="brand-orb"></span>
+        <span class="brand-copy">
+          <strong>Hyacinth Watch</strong>
+          <small>Wetland Survival Project</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="content.html" class="nav-btn">Content</a>
+        <a href="creator.html" class="nav-btn">Creator</a>
+        <a href="donate.html" class="nav-btn active">Donate</a>
+      </div>
+    </nav>
+
+    <main class="content-wrap">
+      <section class="page-header reveal">
+        <div class="title-row">
+          <h1>Help wetlands breathe again</h1>
+          <div class="title-image-frame">
+            <img class="title-image" src="https://gaiacompany.io/wp-content/uploads/2024/10/Wetland-1.jpg" alt="Wetland support image">
+          </div>
+        </div>
+        <p class="lead">This demo page turns support into an interactive counter, showing how repeated contributions can symbolize expanding habitat recovery for nearby wildlife.</p>
+      </section>
+
+      <section class="donation-panel glass reveal">
+        <div>
+          <h2>Every tap stands for restored surface area</h2>
+          <p>Use the button below to simulate support for clearing invasive water hyacinth and opening space for fish, birds, turtles, amphibians, and aquatic plants.</p>
+        </div>
+        <div class="donation-console">
+          <p class="support-label">Habitat reopened</p>
+          <p id="counter" class="counter-value">0 m^2</p>
+          <div class="progress-meta">
+            <div class="progress-stat">
+              <span class="progress-caption">Donated</span>
+              <strong id="moneyRaised">$0</strong>
+            </div>
+            <div class="progress-stat">
+              <span class="progress-caption">Restored</span>
+              <strong id="areaRestored">0 m^2</strong>
+            </div>
+          </div>
+          <div class="progress-track" aria-label="Donation progress">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <div class="button-row centered">
+            <button type="button" onclick="donate()" class="btn btn-primary magnetic">Donate</button>
+            <a href="content.html" class="btn btn-secondary magnetic">Learn More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
